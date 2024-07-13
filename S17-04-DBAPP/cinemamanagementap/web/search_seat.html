@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Seat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="search_seat_process.jsp">
+            <h1 style="text-align:left; font-family:verdana; font-size: 200%">Search Seat</h1>
+                <table style="text-align: left;">
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Search in:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px">
+                        <select name="search" id="search" onchange="checkInput()">
+                            <option value="view_all">View All</option>
+                            <option value="seat_id">Seat ID</option>
+                            <option value="seat_status_avail">Available Seats</option>
+                            <option value="seat_status_occupied">Occupied Seats</option>
+                            <option value="seat_type_reg">Regular Seats</option>
+                            <option value="seat_type_prem">Premium Seats</option>
+                            <option value="seat_type_pwd">PWD Seats</option>
+                            <option value="sched_id">Schedule ID</option>
+                        </select> </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Value:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px"><input type="text" id="value" name="value" style="width: 250px;"></td>
+                </tr>
+                </table>
+            <input type="submit" value="Show Results">
+        </form>
+    </body>
+</html>

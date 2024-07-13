@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="search_tkt_process.jsp">
+            <h1 style="text-align:left; font-family:verdana; font-size: 200%">Search Ticket</h1>
+                <table style="text-align: left;">
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Search in:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px">
+                        <select name="search" id="search">
+                            <option value="view_all">View All</option>
+                            <option value="ticket_id">Ticket ID</option>
+                            <option value="sched_id">Schedule ID</option>
+                            <option value="seat_id">Seat ID</option>
+                            <option value="payment_type">Payment Type</option>
+                            <option value="amount_exact">Amount (Exact)</option>
+                            <option value="amount_less">Amount (Less than value)</option>
+                            <option value="amount_more">Amount (More than value)</option>
+                            <option value="price_exact">Price (Exact)</option>
+                            <option value="price_less">Price (Less than value)</option>
+                            <option value="price_more">Price (More than value)</option>
+                            <option value="change_exact">Change (Exact)</option>
+                            <option value="change_less">Change (Less than value)</option>
+                            <option value="change_more">Change (More than value)</option>
+                            <option value="date_exact">Date (YYYY-MM-DD)</option>
+                            <option value="date_before">Date (Before)</option>
+                            <option value="date_after">Date (After)</option>
+                            <option value="single">Single Purchase Ticket</option>
+                            <option value="rent">Rented Movie</option>
+                            
+                        </select> </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Value:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px"><input type="text" id="value" name="value" style="width: 250px;"></td>
+                </tr>
+                </table>
+            <input type="submit" value="Show Results">
+        </form>
+    </body>
+</html>

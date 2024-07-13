@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Buy Ticket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form action="buy_tkt_process.jsp">
+            <h1 style="text-align:left; font-family:verdana; font-size: 200%">Buy Ticket</h1>
+                <table style="text-align: left;">
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Schedule ID:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px"><input type="text" id="schedule" name="schedule" maxlength="10" style="width: 250px;" required ></td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Seat ID:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px"><input type="text" id="seat" name="seat" maxlength="4" style="width: 150px;" required></td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Payment type:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px">
+                        <select name="payment" id="payment">
+                            <option value="GCash">GCash</option>
+                            <option value="PayMaya">PayMaya</option>
+                            <option value="Master Card">Master Card</option>
+                            <option value="Cash">Cash</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>   
+                    <td style="padding-bottom: 5px; padding-left: 10px; font-size: 120%">Amount:</td>
+                    <td style="padding-bottom: 5px; padding-right: 10px"><input type="number" id="amount" name="amount" style="width: 150px;" required></td>
+                </tr>
+                </table>
+            <input type="submit" value="Buy">
+        </form>
+    </body>
+</html>
